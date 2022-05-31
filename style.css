@@ -17,8 +17,8 @@
 }
 
 body {
-	font-family: Roboto, monospace;
-	margin: 0; /* this removes the white border of my divs */
+	font-family: Roboto, 'Segoe UI', Tahoma, Verdana, sans-serif;
+	margin: 0; /* no white borders */
 }
 
 .header	{
@@ -32,7 +32,7 @@ body {
 .header a {
 	text-align: center;
 	padding: 12px;
-	text-decoration: none; /* getting rid of the underline on links */
+	text-decoration: none; /* no underline on links */
 	font-size: 18px;
 	color: #E5E7EB;
 }
@@ -62,8 +62,7 @@ body {
 }
 
 #hero-img {
-	padding-left: 50px; /* just making a bit of space between
-						   the text and the image */
+	padding-left: 50px;
 }
 
 .image-placeholder {
@@ -71,8 +70,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: #727070;
-	width: 450px;
-	height: 200px;
+	width: 350px;
+	height: 300px;
 }
 
 .image-placeholder p {
@@ -86,11 +85,11 @@ body {
 
 button {
 	background-color: #3882F6;
-	border-color: rgba(1, 1, 1, 0); /* I set this to get rid of the border on the first button*/
+	border-color: rgba(1, 1, 1, 0);
 	color: #F9FAF8;
 	border-radius: 6px;
 	font-size: 18px;
-	padding: 5px 25px 5px 25px; /* customizing the button size */
+	padding: 5px 25px 5px 25px; /* button size */
 }
 
 .random-info h2 {
@@ -121,13 +120,19 @@ button {
 	border-radius: 10px;
 }
 
-#set { /* this basically combines the illustration placeholder and the text */
+.illustration img{
+    width: 150px;
+	height: 150px;
+    border-radius: 5px;
+}
+
+#set {
 	display: flex;
 	flex-direction: column;
 	padding-right: 50px;
 }
 
-.container { /* this centers the quote and the call to action div's */
+.container {
 	display: flex;
 	justify-content: center;
 }
@@ -183,7 +188,8 @@ button {
 .call-to-action button {
 	border-color: #F9FAF8;
 	border-width: 2px;
-	border-style: solid; /* this one was hard to figure out :D (removes the shadow on the button border)*/
+	border-style: solid; /*no shadow on the button border*/
+    text-decoration: none;
 }
 
 .footer {
