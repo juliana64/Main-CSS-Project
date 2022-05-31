@@ -18,7 +18,7 @@
 
 body {
 	font-family: Roboto, 'Segoe UI', Tahoma, Verdana, sans-serif;
-	margin: 0; /* no white borders */
+	margin: 0;
 }
 
 .header	{
@@ -32,7 +32,7 @@ body {
 .header a {
 	text-align: center;
 	padding: 12px;
-	text-decoration: none; /* no underline on links */
+	text-decoration: none;
 	font-size: 18px;
 	color: #E5E7EB;
 }
@@ -196,7 +196,7 @@ button {
 .call-to-action button {
 	border-color: #F9FAF8;
 	border-width: 2px;
-	border-style: solid; /*no shadow on the button border*/
+	border-style: solid;
     text-decoration: none;
 }
 
