@@ -1,20 +1,195 @@
 @font-face {
-    font-family: 'Roboto font';
-    src: url(/font/Roboto-BoldItalic.ttf);
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+	font-weight: normal;
 }
-header{
-    font-family: 'Roboto font', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1f2937;
+
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Bold.ttf) format('truetype');
+	font-weight: bold;
 }
-b{
-    color: #f9faf8;
-    font-size: 48px;
+
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-LightItalic.ttf) format('truetype');
+	font-weight: italic;
 }
-h1{
-    color: #f9faf8;
-    font-size: 24px;
+
+body {
+	font-family: Roboto, monospace;
+	margin: 0; /* this removes the white border of my divs */
 }
-p, .header{
-    color: #e5e7eb;
-    font-size: 18px;
+
+.header	{
+	background-color: #1f2937;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header a {
+	text-align: center;
+	padding: 12px;
+	text-decoration: none; /* getting rid of the underline on links */
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+.header a.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.hero {
+	background-color: #1f2937;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+.hero h1 {
+	color: #F9FAF8;
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.hero p {
+	margin: 10px;
+}
+
+#hero-img {
+	padding-left: 50px; /* just making a bit of space between
+						   the text and the image */
+}
+
+.image-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #727070;
+	width: 450px;
+	height: 200px;
+}
+
+.image-placeholder p {
+	color: #E5E7EB;
+}
+
+.subtext {
+	color: #E5E7EB;
+	font-size: 18px;
+}
+
+button {
+	background-color: #3882F6;
+	border-color: rgba(1, 1, 1, 0); /* I set this to get rid of the border on the first button*/
+	color: #F9FAF8;
+	border-radius: 6px;
+	font-size: 18px;
+	padding: 5px 25px 5px 25px; /* customizing the button size */
+}
+
+.random-info h2 {
+	font-weight: bold;
+	font-size: 36px;
+	color: #1f2937;
+	text-align: center;
+}
+
+.random-info p {
+	color: rgb(90, 90, 90);
+	font-size: 14px;
+	font-weight: bold;
+	width: 150px;
+}
+
+.illustrations {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.illustration {
+	border: none;
+	border: 3px solid #3882F6;
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+#set { /* this basically combines the illustration placeholder and the text */
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
+}
+
+.container { /* this centers the quote and the call to action div's */
+	display: flex;
+	justify-content: center;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	background-color: #E5E7EB;
+	justify-content: center;
+	align-items: center;
+	width: 1500px;
+	padding: 100px 0px 100px 0px;
+}
+
+.quote p {
+	font-size: 36px;
+	color: #1f2937;
+	font-weight: italic;
+	width: 1000px;
+	margin-bottom: 0px;
+}
+
+.quote #sign {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: end;
+	margin-top: 0px;
+}
+
+.call-to-action {
+	display: flex;
+	background-color: #3882F6;
+	border-radius: 8px;
+	margin: 100px 400px 100px 400px;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	width: 1000px;
+}
+
+.call-to-action h3 {
+	font-weight: bold;
+	font-size: 25px;
+	color: #F9FAF8;
+	margin-bottom: 0px;
+}
+
+.call-to-action .subtext {
+	margin-top: 0px;
+}
+
+.call-to-action button {
+	border-color: #F9FAF8;
+	border-width: 2px;
+	border-style: solid; /* this one was hard to figure out :D (removes the shadow on the button border)*/
+}
+
+.footer {
+	background-color: #1f2937;
+	color: #F9FAF8;
+	text-align: center;
+	padding: 20px;
+	margin: 40px 0px 0px 0px;
 }
