@@ -61,6 +61,10 @@ body {
 	margin: 10px;
 }
 
+.hero a{
+    text-decoration: none;
+}
+
 #hero-img {
 	padding-left: 50px;
 }
@@ -89,7 +93,7 @@ button {
 	color: #F9FAF8;
 	border-radius: 6px;
 	font-size: 18px;
-	padding: 5px 25px 5px 25px; /* button size */
+	padding: 5px 25px 5px 25px;
 }
 
 .random-info h2 {
@@ -135,6 +139,10 @@ button {
 .container {
 	display: flex;
 	justify-content: center;
+}
+
+.container a{
+    text-decoration: none;
 }
 
 .quote {
